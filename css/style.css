@@ -22,7 +22,7 @@ html{
 }
 
 .navFlex li {list-style-type: none;
-padding: 30px;font-size: 20px; background: yellow;}
+padding: 30px;font-size: 20px; background: rgb(5, 5, 5);}
 .navFlex li a {text-decoration: none;}
 .navFlex__item1{order: 5;}
 .navFlex__item2{order: -1;}
@@ -197,7 +197,7 @@ font-size: larger;
 float:left;
 width: 50%;
 height: 200px;
-background-color:rgb(231, 255, 96);
+background-color:rgb(122, 122, 122);
 }
 
 .contacto {
@@ -279,7 +279,7 @@ button{
     .navFlex li {list-style-type: none;
         padding: 10px;
         font-size: 10px; 
-        background: yellow;
+        background: rgb(105, 105, 103);
 
     }
 

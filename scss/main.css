@@ -1,25 +1,39 @@
 * {
   margin: 2;
   padding: 2;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
-  font-family: "Shippori Antique", sans-serif;
+  font-family: 'Shippori Antique', sans-serif;
 }
 
 .rowFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 100%;
 }
 
 .navFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 90%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navFlex li {
@@ -34,30 +48,49 @@ html {
 }
 
 .navFlex__item1 {
-  order: 5;
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
 }
 
 .navFlex__item2 {
-  order: -1;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 .navFlex__item3 {
-  order: -2;
+  -webkit-box-ordinal-group: -1;
+      -ms-flex-order: -2;
+          order: -2;
 }
 
 .navFlex__item4 {
-  order: 0;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .sectionFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 500px;
   width: 100%;
-  align-items: stretch;
-  flex-wrap: wrap;
-  align-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
 }
 
 body {
@@ -67,8 +100,11 @@ body {
 .nav {
   background: white;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-size: larger;
 }
 
@@ -116,6 +152,8 @@ body {
 }
 
 .hero_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -138,6 +176,7 @@ h1 {
   text-align: left;
   font-weight: bold;
 }
+
 h1:hover {
   color: brown;
   font-size: 40px;
@@ -259,9 +298,12 @@ h2 {
   height: 100px;
   background: wheat;
   /*trasiciones*/
+  -webkit-transition-property: all;
   transition-property: all;
-  transition-duration: 5s;
-  transition-timing-function: linear;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .cuadrado:hover {
@@ -276,6 +318,7 @@ button {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 30px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#1100ff), to(#ecda72));
   background-image: linear-gradient(to left, #1100ff, #ecda72);
 }
 
@@ -290,25 +333,27 @@ button {
 
 @media only screen and (max-width: 700px) {
   .navFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: initial;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     width: 150px;
     padding-top: 153px;
   }
-
   .navFlex li {
     list-style-type: none;
     padding: 10px;
     font-size: 10px;
     background: yellow;
   }
-
   .contenido h2 {
     font-size: smaller;
   }
-
   .contenido, .contenido h2 {
     margin: auto;
     width: 100%;
@@ -317,14 +362,13 @@ button {
     padding-right: 50px;
     background-color: white;
   }
-
   .textos {
     width: 100%;
   }
-
   .overflow {
     overflow: visible;
     height: 400px;
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

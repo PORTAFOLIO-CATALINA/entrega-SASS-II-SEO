@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
     
         <!--vinculando css-->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/main.css">
       <!-- iconos -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,65 +19,88 @@
     </head>
 <body>
    <!--inicio encabezado-->
-   <header class="header">
+   <header class="rowFlex">
     <nav class="nav">
         <div class="nav_logo">
-                <h1>Catalina Aliga, #LegalDev</h1>
+                <h1>Catalina Aliaga, #LegalDev</h1>
                <!--  <img 
                 class="nav__img"
                 src="assets/img/favicon-32x32.png"> -->
             </div>   
         <!--Barra de Navegación-->
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/proyectos.html">Proyectos</a></li>
-            <li><a href="../pages/interes.html">Articulos</a></li>
-            <li><a href="../pages/educacion.html">CV</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>  
-        </ul>
+            <ul class="navFlex">
+                <li class="navFlex__item1"><a href="../index.html">Inicio</a></li>
+                <li class="navFlex__item2"><a href="../pages/proyectos.html">Proyectos</a></li>
+                <li class="navFlex__item3"><a href="../pages/educacion.html">Educación</a></li>
+                <li class="navFlex__item4"><a href="../pages/interes.html">Interés</a></li>
+                <li class="navFlex__item5"><a href="../pages/contacto.html">Contacto</a></li>  
+            </ul>
         </nav>
-</header>  
+</header>   
+<!--fin header-->
 
-<article class="Interes">
+<!--Implentando Overflow-->
+<section class="sectionFlex">
 
-    <h2>Interes</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum quasi optio, eveniet, laboriosam quis totam sed nam beatae pariatur recusandae consequuntur iure doloribus, architecto minima eaque accusamus rem consequatur sequi.</p>
+    <div class="overflow_img">
+        <img class="bordesRedondeados
+        imgchica"
+        src="../assets/img/santiago.jpg" alt="imagen de código"> 
+    </div>
 
-        <ol class="subMenu">
-                <li><a href="#articulos">Articulos</a></li>
-                <li><a href="#libros">Libros</a></li>
-                <li><a href="#Noticias">Noticias</a></li>
-                <li><a href="Blog">Blog</a></li>
-        </ol>
+    <div class="overflow">
+        <h2>#Interés</h2>  
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus veniam nobis odit dolores reprehenderit fugit! Libero autem cupiditate magnam atque dolor at eos facilis, aperiam voluptas ad quam eum dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit quia fugit rem ipsam earum consequatur voluptatem laboriosam, quidem, accusantium delectus ad iste asperiores vitae! Sit reprehenderit atque assumenda beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium illo repudiandae tenetur neque ex maiores vero voluptatibus sunt mollitia itaque! Magnam itaque voluptas iure enim, iusto optio ut nam beatae.</p>
+    </div>
+  
+</section>
 
-<div class="articulos">
+
 
 <!-- boxes -->
 
 <div class="left_box">
     <dl>
-        <dt> Articulo 1 </dt>
-        <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, consequuntur?.</dd>
+        <dt class="dl_titulo">Lo que estoy leyendo </dt>
+        <li><a href="http://www.paulgraham.com/wtax.html">Modeling a Wealth Tax</a></li>
+        <li><a href="http://www.paulgraham.com/conformism.html">The Four Quadrants of Conformism</a></li>
+        <li><a href="http://www.paulgraham.com/useful.html">How to Write Usefully</a></li>
+        <li><a href="http://www.paulgraham.com/bias.html">A Way to Detect Bias</a></li>
+        <li><a href="http://www.paulgraham.com/word.html">A Word to the Resourceful</a></li>
+        <li><a href="http://www.paulgraham.com/badeconomy.html">Why to Start a Startup in a Bad Economy</a></li>
         </dl>
 </div>
 
 <div class="right_box">
     <dl> </dl>
-        <dt> Articulo 2</dt>
-        <dd> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, delectus?</dd>
+        <dt class="dl_titulo">Recomendaciones</dt>
+        <li><a href="https://www.amazon.com/Saifedean-Ammous/dp/1119473861?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2X4G4N1BUHO80&keywords=bitcoin&qid=1640280138&sprefix=bitcoin,aps,106&sr=8-4&linkCode=sl1&tag=founfeed-20&linkId=6afcbcd3efd9f339668dbc78b67a6e9e&language=en_US&ref_=as_li_ss_tl">The Bitcoin Standard: The Decentralized Alternative to
+            Central Banking - Abril 2018 por Saifedean Ammous</a></li>
+        <li><a href="https://www.amazon.com/Layered-Money-Dollars-Bitcoin-Currencies/dp/1736110527?_encoding=UTF8&coliid=I1RG7KM10ZSEVH&colid=3HYCH94HWKPT3&qid=&sr=&linkCode=sl1&tag=founfeed-20&linkId=da60ed75b803fb5bd405f2088ee24a3f&language=en_US&ref_=as_li_ss_tl">Layered Money: From Gold and Dollars to Bitcoin and
+            Central Bank Digital Currencies – Enero, 2021 por Nik
+            Bhatia</a></li>
+        <li><a href="https://www.amazon.com/Inventing-Bitcoin-Technology-Decentralized-Explained/dp/1794326316?_encoding=UTF8&coliid=I343US5V5KGEF3&colid=3HYCH94HWKPT3&qid=&sr=&linkCode=sl1&tag=founfeed-20&linkId=044c37772f157b3b864f449367393f21&language=en_US&ref_=as_li_ss_tl">Inventing Bitcoin: The Technology Behind the First Truly
+            Scarce and Decentralized Money Explained – Junio, 2019
+            por Yan Pritzker</a></li>
+        <li><a href="https://www.amazon.com/Mastering-Bitcoin-Programming-Open-Blockchain/dp/1491954388?_encoding=UTF8&qid=&sr=&linkCode=sl1&tag=founfeed-20&linkId=318cb79f1a937b4fbe34e529726d3e35&language=en_US&ref_=as_li_ss_tl">Mastering Bitcoin: Programming the Open Blockchain -
+            Julio 2017 por Andreas M. Antonopoulos</a></li>
+        <li><a href="https://www.amazon.com/Mastering-Lightning-Network-Blockchain-Protocol/dp/1492054860?pd_rd_w=BMFWe&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=CFY03TH96MCYVTB8SG9K&pd_rd_r=e3fdcc09-f027-4a3d-9804-bf823fb787b5&pd_rd_wg=TA8Hk&pd_rd_i=1492054860&psc=1&linkCode=sl1&tag=founfeed-20&linkId=8fffcd21e186308f955f6e6f24d737a4&language=en_US&ref_=as_li_ss_tl">Mastering the Lightning Network: A Second Layer
+            Blockchain Protocol for Instant Bitcoin Payments -
+            Diciembre 2021 por Andreas M. Antonopoulos</a></li>
+        <li><a href="https://www.amazon.com/dp/006236250X?coliid=I3AHINFF3ON8XY&colid=3HYCH94HWKPT3&psc=0&linkCode=sl1&tag=founfeed-20&linkId=410d6283290b5aa297ec30488ff4b669&language=en_US&ref_=as_li_ss_tl">Digital Gold: Bitcoin and the Inside Story of the Misfits
+            and Millionaires Trying to Reinvent Money – Mayo, 2016
+            por Nathaniel Popper</a></li> 
     </dl>
-</div>
-    
-</article>       
+</div>   
 
 
-   <!--inicio del footer-->
-   <footer class="footer">
+<!--inicio del footer-->
+<footer class="footer">
     <!-- Add font awesome icons -->
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-instagram"></a>
-  </footer>
+<a href="https://www.facebook.com/123cataali/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/catalinaaliaga" class="fa fa-twitter"></a>
+<a href="https://www.linkedin.com/in/catalina-aliaga/" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/cataaliaga/" class="fa fa-instagram"></a>
+</footer>
 </body>
 </html>

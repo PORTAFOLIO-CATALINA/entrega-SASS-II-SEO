@@ -1,6 +1,6 @@
 * {
-  margin: 2;
-  padding: 2;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,22 +11,60 @@ html {
 .rowFlex {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  
+  justify-content: center;
   width: 100%;
-}
+  height: 115px;
+  background: #8d8d8d;
+  padding-left: 150px;
+  padding-right: 150px;
+} 
 
 .navFlex {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 100%;
   justify-content: flex-end;
 }
+
+.nav {
+
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+  align-items: center;
+}
+.nav a {
+  color: #030303;
+  font-family: "Shippori Antique", sans-serif;
+}
+
+.nav a:hover{ 
+  color:white;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav_logo {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav h1 {
+  display: inline;
+}
+
 
 .navFlex li {
   list-style-type: none;
   padding: 30px;
   font-size: 20px;
-  background: #eff141;
+
 }
 
 .navFlex li a {
@@ -34,26 +72,29 @@ html {
 }
 
 .navFlex__item1 {
-  order: 5;
+  order: 0;
 }
 
 .navFlex__item2 {
-  order: -1;
+  order: 1;
 }
 
 .navFlex__item3 {
-  order: -2;
+  order: 2;
 }
 
 .navFlex__item4 {
-  order: 0;
+  order: 3;
+}
+
+.navFlex__item5 {
+  order: 4;
 }
 
 .sectionFlex {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 500px;
   width: 100%;
   align-items: stretch;
   flex-wrap: wrap;
@@ -64,32 +105,15 @@ body {
   overflow-x: visible;
 }
 
-.nav {
-  background: white;
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  font-size: larger;
-}
 
-.nav li {
-  display: inline;
-}
-
-.nav_logo {
-  height: 100%;
-  background: white;
-}
-
-.nav h1 {
-  display: inline;
-}
 
 .overflow {
   width: 50%;
   height: 300px;
   overflow: scroll;
-  margin: auto;
+  margin-top: 125px;
+  margin-right: 150px;
+  
 }
 
 .overflow_works {
@@ -111,7 +135,7 @@ body {
 }
 
 .subMenu li a {
-  color: blue;
+  color: rgb(12, 12, 12);
 }
 
 .hero_banner {
@@ -119,8 +143,12 @@ body {
 }
 
 .contenido {
-  margin: 150px;
-  padding: 200px;
+
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 100px;
   background-color: #e4e4e4;
 }
 
@@ -130,17 +158,14 @@ body {
   color: black;
 }
 
+
 h1 {
   color: #030303;
   font-size: 40px;
   text-align: left;
   font-weight: bold;
 }
-h1:hover {
-  color: brown;
-  font-size: 40px;
-  text-decoration: underline;
-}
+
 
 .textos p {
   text-align: justify;
@@ -160,12 +185,11 @@ h2 {
 }
 
 .bordesRedondeados {
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .imgchica {
-  width: 600px;
-  float: right;
+  width: 329px;
 }
 
 .h2Name {
@@ -210,17 +234,28 @@ h2 {
 .left_box {
   font-size: larger;
   float: left;
-  width: 50%;
-  height: 300px;
+  width: 40%;
+  height: 600px;
   background-color: #e4e4e4;
+  margin-left: 150px;
+  padding: 25px;
+}
+
+.dl_titulo {  
+  font-weight: bolder;
+}
+
+.a_links{
+  color: black;
 }
 
 .right_box {
   font-size: larger;
   float: left;
-  width: 50%;
-  height: 200px;
-  background-color: #e7ff60;
+  width: 40%;
+  height: 600px;
+  background-color:#8b8b87;
+  padding: 25px;
 }
 
 .contacto {
@@ -286,7 +321,25 @@ button {
   margin-top: 100px;
 }
 
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 1550px) {
+  
+  .nav h1 {
+    font-size: 1.5em;
+  }
+
+
+  }
+
+
+  @media only screen and (max-width: 1217px) {
+    .nav h1 {
+      font-size: 1em;
+    }
+    }
+
+
+    @media only screen and (max-width: 1000px) {
   .navFlex {
     display: flex;
     position: initial;
@@ -300,31 +353,125 @@ button {
     list-style-type: none;
     padding: 10px;
     font-size: 10px;
-    background: yellow;
+    background: rgb(182, 181, 181);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-
-  .contenido h2 {
-    font-size: smaller;
-  }
-
-  .contenido {
-    margin: auto;
-    width: 100%;
-    padding-top: 400px;
-    padding-left: 20px;
-    padding-right: 50px;
-    background-color: white;
-  }
-
-  .textos {
-    width: 100%;
-  }
-
-  .overflow {
-    overflow: visible;
-    height: 400px;
-    width: 100%;
-  }
+.overflow{
+width: 70%;
+margin: 0px;
+height: 250px;
+overflow:initial;
 }
+.contenido{
+  margin: 0px;
+  padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 70px;
+}
+
+.left_box{
+  margin: 0px;
+  width: 50%;
+  height: 700px;
+}
+
+.right_box{
+  margin: 0px;
+  width: 50%;
+  height: 700px;
+}
+
+}
+
+
+@media only screen and (max-width: 730px) {
+  .rowFlex{
+    padding-left: 32px;
+    padding-right: 36px;
+  }
+.overflow{
+  height: 400px;
+}
+.contacto{
+  width: 95%;
+}
+
+.left_box{
+  height: 800px;
+}
+
+.right_box{
+  height: 800px;
+}
+
+
+  }
+
+
+
+@media only screen and (max-width: 630px) {
+  .navFlex {
+    display: flex;
+    position: initial;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-top: 153px;
+  }
+
+  .navFlex li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 10px;
+    background: rgb(182, 181, 181);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .rowFlex{
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    height: 200px;
+    justify-content: flex-end;
+  }
+.overflow{
+  margin: 0px;
+  height: auto;
+  width: 70%;
+  padding-bottom: 25px;
+}
+.contenido{
+  margin: 0px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 100px;
+  padding-left: 25px;
+  
+}
+
+.contenido h2{
+  font-size: 2em;
+}
+
+.textos dt {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.left_box {
+  width: 100%;
+  margin-left: 0px;
+}
+
+.right_box{
+  width: 100%;
+  margin-right: 0px;
+
+}
+
+
+}
+
 
 /*# sourceMappingURL=main.css.map */
